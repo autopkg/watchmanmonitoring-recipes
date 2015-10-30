@@ -1,11 +1,16 @@
-watchmanmonitoring-recipies
+Watchman Monitoring Recipes
 ===========================
 
 A recipe to download the latest Monitoring Client version for a given subscription
 
 
+## Fork this recipe
+
+This recipe references a subscriber's subdomain. In order for this to work for you
+
+
 ## Downloading the client
-Without AutoPkg, an IT administrator can download the latest build of their installer, and save it as a post-restore action in their depoyment system of choice.
+Without AutoPkg, an IT administrator can download the latest build of their installer, and save it as a post-restore action in their deployment system of choice.
 
 Using defaults to set preferences, even before deployment, the behavior of the monitoring client can be controlled.
 See more at https://www.watchmanmonitoring.com/terminal-commands

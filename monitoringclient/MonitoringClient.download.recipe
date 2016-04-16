@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>MonitoringClient</string>
         <key>SUBDOMAIN</key>
-        <string>app</string>
+        <string>www</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.3.1</string>

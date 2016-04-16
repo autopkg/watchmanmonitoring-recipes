@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of Monitoring Client.</string>
     <key>Identifier</key>
-    <string>com.github.monitoringclient.download.monitoringclient</string>
+    <string>com.github.watchmanmonitoring.download.monitoringclient</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>

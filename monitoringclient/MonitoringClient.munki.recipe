@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest Monitoring Client installation package and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.autopkg.munki.monitoringclient</string>
+    <string>com.github.watchmanmonitoring.munki.monitoringclient</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>

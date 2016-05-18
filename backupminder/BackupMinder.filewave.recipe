@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads latest version of BackupMinder.</string>
+	<key>Identifier</key>
+	<string>com.github.watchmanmonitoring.filewave.backupminder</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>BackupMinder</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>0.2.1</string>
+	<key>Process</key>
+		<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>archive_path</key>
+				<string>%pathname%</string>
+				<key>destination_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%</string>
+				<key>purge_destination</key>
+				<true/>
+			</dict>
+			<key>Processor</key>
+			<string>Unarchiver</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>Comment</key>
+				<string>Specify the bundle ID and version in order to get FileWave to check for duplicate imports. This only works for filesets imported by AutoPkg, not for filesets you added to FileWave by hand.</string>
+				<key>fw_app_bundle_id</key>
+				<string>org.backupminder.backupminder</string>
+				<key>fw_app_version</key>
+				<string>%version%</string>
+				<key>fw_destination_root</key>
+				<string>/Applications/%NAME%.app</string>
+				<key>fw_fileset_name</key>
+				<string>%NAME% - %version%</string>
+				<key>fw_import_source</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/%NAME%.app</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
+		</dict>
+	</array>
+</dict>
+</plist>

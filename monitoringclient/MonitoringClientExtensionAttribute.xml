@@ -1,0 +1,21 @@
+<computer_extension_attribute>
+	<name>MonitoringClientVersion</name>
+	<description />
+	<data_type>String</data_type>
+	<input_type>
+		<type>script</type>
+		<platform>Mac</platform>
+		<script>#!/bin/bash
+MonitoringClientVersion=""
+if [[ -f /Library/MonitoringClient/ClientSettings.plist ]]
+	then
+		MonitoringClientVersion=$(defaults read /Library/MonitoringClient/ClientSettings.plist Client_Version)
+fi
+
+echo "&lt;result&gt;$MonitoringClientVersion&lt;/result&gt;"
+
+exit 0</script>
+	</input_type>
+	<inventory_display>Extension Attributes</inventory_display>
+	<recon_display>Extension Attributes</recon_display>
+</computer_extension_attribute>

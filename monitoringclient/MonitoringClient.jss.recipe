@@ -19,7 +19,7 @@
  		<key>POLICY_CATEGORY</key>
  		<string>Testing</string>
 		<key>SUBDOMAIN</key>
-		<string>encoretech</string>
+		<string>www</string>
  		<key>POLICY_TEMPLATE</key>
  		<string>PolicyTemplate.xml</string>
  		<key>SELF_SERVICE_DESCRIPTION</key>

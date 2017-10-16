@@ -6,7 +6,7 @@
 		<type>script</type>
 		<platform>Mac</platform>
 		<script>#!/bin/bash
-MonitoringClientVersion=""
+MonitoringClientVersion="Not Installed"
 if [[ -f /Library/MonitoringClient/ClientSettings.plist ]]
 	then
 		MonitoringClientVersion=$(defaults read /Library/MonitoringClient/ClientSettings.plist Client_Version)

@@ -14,7 +14,7 @@
 			<priority>1</priority>
 			<and_or>and</and_or>
 			<search_type>is not</search_type>
-			<value></value>
+			<value>Not Installed</value>
 		</criterion>
 		<criterion>
 			<name>Computer Group</name>

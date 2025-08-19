@@ -46,7 +46,7 @@
 				<string>%pathname%</string>
 				<key>expected_authority_names</key>
 				<array>
-					<string>Developer ID Installer: Watchman Monitoring, Inc</string>
+                    <string>Developer ID Installer: Monitoring Client LLC (T4243N6PXZ)</string>
 					<string>Developer ID Certification Authority</string>
 					<string>Apple Root CA</string>
 				</array>
